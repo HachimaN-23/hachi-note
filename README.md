@@ -1,6 +1,8 @@
 # HACHI NOTE
 
-A fast, private, local-first notes app with wikilinks, backlinks, and more. Free sync, works on any device.
+A fast, private notes app with wikilinks, backlinks, and more. Works on any device.
+
+**Live:** https://hachi-note.vercel.app
 
 ## Features
 
@@ -48,20 +50,29 @@ A fast, private, local-first notes app with wikilinks, backlinks, and more. Free
 ## Tech Stack
 
 - **Framework**: Next.js 16 (App Router)
-- **Database**: SQLite via `better-sqlite3`
+- **Database**: Supabase (PostgreSQL)
 - **Styling**: Tailwind CSS 4
 - **Markdown**: `react-markdown`
 - **Frontmatter**: `js-yaml`
+- **Deployment**: Vercel
 - **Testing**: Playwright (e2e), Vitest (unit)
 
 ## Getting Started
 
 ```bash
 npm install
+cp .env.example .env.local  # add your Supabase credentials
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
+
+## Environment Variables
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
 ## Project Structure
 
@@ -96,7 +107,8 @@ src/
 │   ├── QuickNote.tsx           # Scratch pad (mobile + desktop)
 │   └── ...                     # Theme, Toast, Search, etc.
 └── lib/
-    ├── db.ts                   # SQLite database layer
+    ├── supabase.ts             # Supabase client
+    ├── supabase-db.ts          # Supabase database layer
     └── frontmatter.ts          # YAML frontmatter parser
 ```
 
@@ -121,7 +133,7 @@ tags: [react, nextjs]
 
 Frontmatter tags are merged with the tag system. Custom fields are stored as JSON metadata.
 
-## Playwright Test Results
+## Test Results
 
 | Feature | Status |
 |---------|--------|
@@ -158,4 +170,4 @@ Frontmatter tags are merged with the tag system. Custom fields are stored as JSO
 - [ ] Plugin system for extensibility
 - [ ] Real-time collaboration
 - [ ] End-to-end encryption
-- [ ] Mobile app via Capacitor (APK/IPA)
+- [ ] Native mobile app (iOS/Android)
