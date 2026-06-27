@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+  --muted: #6b7280;
+  --accent: #f59e0b;
+  --gradient-1: #f59e0b;
+  --gradient-2: #ec4899;
+  --gradient-3: #8b5cf6;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --card-bg: #1a1a1a;
+  --card-border: #2a2a2a;
+  --muted: #9ca3af;
+  --accent: #fbbf24;
+  --gradient-1: #fbbf24;
+  --gradient-2: #f472b6;
+  --gradient-3: #a78bfa;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Card gradient border */
+.card-gradient-border {
+  position: relative;
+  border: none !important;
+}
+
+.card-gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2), var(--gradient-3));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card-gradient-border:hover::before {
+  opacity: 1;
+}
+
+/* FAB pulse animation */
+@keyframes fab-pulse {
+  0%, 100% { box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1); }
+  50% { box-shadow: 0 4px 20px 4px rgba(0, 0, 0, 0.2); }
+}
+
+.fab-pulse {
+  animation: fab-pulse 3s ease-in-out infinite;
+}
+
+/* Tag color variants */
+.tag-color-0 { --tag-bg: #fef3c7; --tag-text: #92400e; --tag-dark-bg: #78350f; --tag-dark-text: #fef3c7; }
+.tag-color-1 { --tag-bg: #fce7f3; --tag-text: #9d174d; --tag-dark-bg: #831843; --tag-dark-text: #fce7f3; }
+.tag-color-2 { --tag-bg: #ede9fe; --tag-text: #5b21b6; --tag-dark-bg: #4c1d95; --tag-dark-text: #ede9fe; }
+.tag-color-3 { --tag-bg: #dbeafe; --tag-text: #1e40af; --tag-dark-bg: #1e3a8a; --tag-dark-text: #dbeafe; }
+.tag-color-4 { --tag-bg: #d1fae5; --tag-text: #065f46; --tag-dark-bg: #064e3b; --tag-dark-text: #d1fae5; }
+.tag-color-5 { --tag-bg: #fed7aa; --tag-text: #9a3412; --tag-dark-bg: #7c2d12; --tag-dark-text: #fed7aa; }
+
+.tag-pill {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  transition: all 0.2s ease;
+}
+
+.dark .tag-pill {
+  background: var(--tag-dark-bg);
+  color: var(--tag-dark-text);
+}
+
+.tag-pill:hover {
+  transform: scale(1.05);
+}
+
+/* Note appear animation */
+@keyframes note-appear {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.note-appear {
+  animation: note-appear 0.3s ease-out;
+}
+
+.prose {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.prose pre {
+  white-space: pre-wrap;
+  word-break: break-all;
+}

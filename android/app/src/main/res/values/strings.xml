@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">HACHI NOTE</string>
+    <string name="title_activity_main">HACHI NOTE</string>
+    <string name="package_name">com.hachi.note</string>
+    <string name="custom_url_scheme">com.hachi.note</string>
+</resources>
