@@ -2,7 +2,15 @@
 
 A fast, private notes app with wikilinks, backlinks, and more. Works on any device.
 
-**Live:** https://hachi-note.vercel.app
+**Live:** https://hachi-note.vercel.app  
+**Built by:** Carlo Neroza  
+**Named after:** Hachi (the cat)
+
+## What Is This
+
+A personal notes app inspired by Obsidian. Markdown-first, linked notes, local-first feel. Deployed as a PWA — install it on your phone's home screen and it works like a native app.
+
+This was built in one session. Every feature was added, tested, and shipped in a single sitting. The kind of thing you do when you refuse to stop until it works.
 
 ## Features
 
@@ -29,7 +37,7 @@ A fast, private notes app with wikilinks, backlinks, and more. Works on any devi
 - **Reminders** — Set reminder dates on notes
 - **Quick Notes** — Scratch pad (works on mobile + desktop)
 - **Image Attachments** — Attach images to notes
-- **Export** — Export notes as markdown
+- **Export** — Export notes as JSON, Markdown, or CSV
 
 ### Dropdowns & Menus
 - **Note Card Menu** — 3-dot dropdown: Edit, Copy, Lock/Unlock, Delete
@@ -133,41 +141,39 @@ tags: [react, nextjs]
 
 Frontmatter tags are merged with the tag system. Custom fields are stored as JSON metadata.
 
-## Test Results
+## What I Learned Building This
 
-| Feature | Status |
-|---------|--------|
-| Main page loads | ✅ |
-| Notes list | ✅ |
-| Today button | ✅ |
-| Tags filter | ✅ |
-| Folders + dropdown | ✅ |
-| Search bar | ✅ |
-| NoteView + outline | ✅ |
-| Back button | ✅ |
-| Wikilinks render | ✅ |
-| Wikilink navigation (no reload) | ✅ |
-| Wikilink autocomplete | ✅ |
-| Pin/unpin note | ✅ |
-| 3-dot dropdown on cards | ✅ |
-| 3-dot dropdown in NoteView | ✅ |
-| Edit from NoteView opens form | ✅ |
-| Text selection toolbar | ✅ |
-| Folder: Add note | ✅ |
-| Folder: Rename | ✅ |
-| Folder: Delete | ✅ |
-| Mobile: Quick Note + FAB | ✅ |
-| Mobile: dropdown works | ✅ |
-| Mobile: NoteView container | ✅ |
-| Mobile: no text overflow | ✅ |
+This was my first real web app. I started with zero knowledge of Next.js, React, Supabase, or deployment. Here's what the journey taught me:
 
-## Future Development
+**The database will betray you.** I built the whole app with SQLite locally. It worked perfectly. Then I deployed to Vercel and everything broke. SQLite doesn't run on serverless. I learned about Supabase, PostgreSQL, foreign keys, and why "it works on my machine" means nothing.
 
-- [ ] Graph view (note relationship visualization)
-- [ ] Callouts `> [!info]` syntax support
-- [ ] Templates for common note formats
-- [ ] Canvas/whiteboard for visual thinking
-- [ ] Plugin system for extensibility
-- [ ] Real-time collaboration
-- [ ] End-to-end encryption
-- [ ] Native mobile app (iOS/Android)
+**Async/await is not optional.** The API returned `{}` for every individual note. The data existed in the database. The query was correct. The problem? I forgot `await` on a single function call. One missing word, entire feature broken. That lesson cost me hours.
+
+**Nested queries save lives.** The original code made 3 separate database calls per note — get the note, get its tags, get its checklist items. On a free Supabase tier, those sequential calls timed out. I learned to use Supabase's nested select (`select('*, note_tags(tags(name))')`) to get everything in one query.
+
+**Mobile is not desktop with smaller pixels.** Dropdowns that work on hover don't work on touch. Buttons hidden behind `opacity-0 group-hover:opacity-100` are invisible on phones. I rebuilt every interactive element to be click-based, not hover-based.
+
+**PWA is a real app.** I thought I needed to build an APK to have a "real" mobile app. I was wrong. A PWA installs on your home screen, works offline, and feels native. Twitter, Instagram, and Starbucks are PWAs. That's good enough for a notes app.
+
+**The UI will look AI-generated until you fight it.** Every default looks generic. Every component looks like a template. Making something look premium requires intention — specific fonts, specific colors, specific spacing. Not just "make it look good."
+
+**Ship it broken, fix it live.** I could have spent weeks polishing before deploying. Instead I shipped it with bugs and fixed them while real users (me) tested it. The feedback loop of "deploy → see it broken → fix → redeploy" taught me more than any tutorial.
+
+**Graph theory is useful.** I ran a code graph analysis on the project. 339 nodes, 425 edges, 36 communities. It showed me which parts of my code were doing too much (API Routes: 40 nodes, cohesion 0.07) and which were clean (Images API: 4 nodes, cohesion 0.60). The graph doesn't lie about your architecture.
+
+---
+
+**Final stats:**
+- 58 source files
+- 19 API routes
+- 15 React components
+- 24+ Playwright tests passing
+- 1 live deployment on Vercel
+- 1 GitHub repo
+- 0 database files committed (learned that the hard way)
+
+---
+
+This is what it feels like to grow as a dev. Not the tutorials. Not the courses. The 3 AM debugging sessions where nothing works and you don't know why. The deployment that breaks in production but works locally. The missing `await` that wastes your entire afternoon. That's the real education.
+
+You built something. It exists. It works. That matters.
