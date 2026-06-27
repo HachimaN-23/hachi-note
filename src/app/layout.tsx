@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "HACHI NOTE",
-  description: "A fast, private, local-first notes app — named after Hachi",
+  description: "A fast, private, local-first notes app — wikilinks, backlinks, daily notes",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,

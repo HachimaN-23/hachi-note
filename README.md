@@ -1,6 +1,6 @@
 # HACHI NOTE
 
-A web-based notes app with Obsidian-inspired features. Free sync, works on any device.
+A fast, private, local-first notes app with wikilinks, backlinks, and more. Free sync, works on any device.
 
 ## Features
 
@@ -14,7 +14,7 @@ A web-based notes app with Obsidian-inspired features. Free sync, works on any d
 - **Pin Notes** — Pin important notes to the top
 - **Grid/List Toggle** — Switch between card grid and compact list view
 
-### Obsidian-Inspired Features
+### Linked Notes
 - **Wikilinks** — Type `[[Note Title]]` to link notes together. Click to navigate instantly (no page reload).
 - **Backlinks** — See which notes reference the current note
 - **Daily Notes** — Click "Today" to create/open today's dated note with YAML frontmatter
