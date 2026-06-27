@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { updateFolder, deleteFolder } from '@/lib/db';
+import { updateFolder, deleteFolder } from '@/lib/supabase-db';
 
 export async function PUT(
   request: Request,

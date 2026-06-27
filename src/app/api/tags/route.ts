@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getAllTags } from '@/lib/db';
+import { getAllTags } from '@/lib/supabase-db';
 
 export async function GET() {
   try {

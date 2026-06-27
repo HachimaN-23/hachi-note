@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { lockNote, unlockNote, getNote } from '@/lib/db';
+import { lockNote, unlockNote, getNote } from '@/lib/supabase-db';
 
 export async function POST(
   request: Request,
@@ -14,20 +14,20 @@ export async function POST(
       return NextResponse.json({ error: 'Password is required' }, { status: 400 });
     }
 
-    const note = getNote(Number(id));
+    const note = await getNote(Number(id));
     if (!note) {
       return NextResponse.json({ error: 'Note not found' }, { status: 404 });
     }
 
     if (note.locked) {
-      const success = unlockNote(Number(id), password);
+      const success = await unlockNote(Number(id), password);
       if (!success) {
         return NextResponse.json({ error: 'Incorrect password' }, { status: 403 });
       }
       return NextResponse.json({ success: true, locked: false });
     }
 
-    lockNote(Number(id), password);
+    await lockNote(Number(id), password);
     return NextResponse.json({ success: true, locked: true });
   } catch {
     return NextResponse.json({ error: 'Failed to toggle lock' }, { status: 500 });

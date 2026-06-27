@@ -11,7 +11,7 @@ import ExportMenu from '@/components/ExportMenu';
 import QuickNote from '@/components/QuickNote';
 import DailyNoteButton from '@/components/DailyNoteButton';
 import FolderDropdown from '@/components/FolderDropdown';
-import type { Note, Folder } from '@/lib/db';
+import type { Note, Folder } from '@/lib/supabase-db';
 import { Plus, X, Cat, FolderOpen, PlusCircle, LayoutGrid, List } from 'lucide-react';
 import { useToast } from '@/components/Toast';
 

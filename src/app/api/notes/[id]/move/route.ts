@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { moveNoteToFolder } from '@/lib/db';
+import { moveNoteToFolder } from '@/lib/supabase-db';
 
 export async function POST(
   request: Request,

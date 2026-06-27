@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { addReminder, deleteReminder, getReminders } from '@/lib/db';
+import { addReminder, deleteReminder, getReminders } from '@/lib/supabase-db';
 
 export async function GET(
   request: Request,

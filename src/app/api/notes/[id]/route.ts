@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getNote, updateNote, deleteNote } from '@/lib/db';
+import { getNote, updateNote, deleteNote } from '@/lib/supabase-db';
 
 const MAX_TITLE = 500;
 const MAX_CONTENT = 100_000;

@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { addNoteImage, deleteNoteImage } from '@/lib/db';
+import { addNoteImage, deleteNoteImage } from '@/lib/supabase-db';
 
 export async function POST(
   request: Request,

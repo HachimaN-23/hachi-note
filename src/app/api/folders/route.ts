@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getAllFolders, createFolder } from '@/lib/db';
+import { getAllFolders, createFolder } from '@/lib/supabase-db';
 
 export async function GET() {
   try {

@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getAllNotes, createNote, searchNotes, getNotesByTag, addChecklistItem } from '@/lib/db';
+import { getAllNotes, createNote, searchNotes, getNotesByTag, addChecklistItem } from '@/lib/supabase-db';
 
 const MAX_TITLE = 500;
 const MAX_CONTENT = 100_000;
@@ -15,12 +15,12 @@ export async function GET(request: Request) {
 
     let notes;
     if (q) {
-      notes = searchNotes(q);
+      notes = await searchNotes(q);
     } else if (tag) {
-      notes = getNotesByTag(tag);
+      notes = await getNotesByTag(tag);
     } else {
       const folderId = folder !== null ? (folder === 'null' ? null : Number(folder)) : undefined;
-      notes = getAllNotes(folderId);
+      notes = await getAllNotes(folderId);
     }
     return NextResponse.json(notes);
   } catch {
@@ -63,13 +63,13 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Folder ID must be a number' }, { status: 400 });
     }
 
-    const note = createNote(title, content || '', tags || [], color, folder_id);
+    const note = await createNote(title, content || '', tags || [], color, folder_id);
 
     if (body.checklist_items && Array.isArray(body.checklist_items)) {
       for (let i = 0; i < body.checklist_items.length; i++) {
         const item = body.checklist_items[i];
         if (item.text && typeof item.text === 'string') {
-          addChecklistItem(note.id, item.text.trim(), i);
+          await addChecklistItem(note.id, item.text.trim(), i);
         }
       }
     }

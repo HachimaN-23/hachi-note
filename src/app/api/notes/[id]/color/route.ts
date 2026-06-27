@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { updateNoteColor } from '@/lib/db';
+import { updateNoteColor } from '@/lib/supabase-db';
 
 export async function POST(
   request: Request,

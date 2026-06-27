@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { togglePin } from '@/lib/db';
+import { togglePin } from '@/lib/supabase-db';
 
 export async function POST(
   request: Request,

@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getChecklistItems, addChecklistItem, updateChecklistItem, deleteChecklistItem } from '@/lib/db';
+import { getChecklistItems, addChecklistItem, updateChecklistItem, deleteChecklistItem } from '@/lib/supabase-db';
 
 export async function GET(
   request: Request,

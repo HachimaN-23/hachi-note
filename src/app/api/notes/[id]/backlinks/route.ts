@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getBacklinks } from '@/lib/db';
+import { getBacklinks } from '@/lib/supabase-db';
 
 export async function GET(
   request: Request,
