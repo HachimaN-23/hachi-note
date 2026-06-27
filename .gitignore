@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# database
+*.db
+*.db-shm
+*.db-wal
+
+# test results
+test-results/
+playwright-report/
+
+# graphify cache
+graphify-out/cache/
