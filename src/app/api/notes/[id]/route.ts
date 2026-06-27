@@ -12,7 +12,7 @@ export async function GET(
 ) {
   try {
     const { id } = await params;
-    const note = getNote(Number(id));
+    const note = await getNote(Number(id));
 
     if (!note) {
       return NextResponse.json({ error: 'Note not found' }, { status: 404 });
