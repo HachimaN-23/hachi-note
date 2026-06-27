@@ -37,13 +37,163 @@
   },
   "nodes": [
     {
+      "label": "build.gradle",
+      "file_type": "code",
+      "source_file": "android/app/build.gradle",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_build",
+      "community": 35,
+      "norm_label": "build.gradle"
+    },
+    {
+      "label": "ExampleInstrumentedTest.java",
+      "file_type": "code",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "myapp_exampleinstrumentedtest",
+      "community": 4,
+      "norm_label": "exampleinstrumentedtest.java"
+    },
+    {
+      "label": "ExampleInstrumentedTest",
+      "file_type": "code",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "myapp_exampleinstrumentedtest_exampleinstrumentedtest",
+      "community": 4,
+      "norm_label": "exampleinstrumentedtest"
+    },
+    {
+      "label": ".useAppContext()",
+      "file_type": "code",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "myapp_exampleinstrumentedtest_exampleinstrumentedtest_useappcontext",
+      "community": 4,
+      "norm_label": ".useappcontext()"
+    },
+    {
+      "label": "MainActivity.java",
+      "file_type": "code",
+      "source_file": "android/app/src/main/java/com/hachi/note/MainActivity.java",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "note_mainactivity",
+      "community": 25,
+      "norm_label": "mainactivity.java"
+    },
+    {
+      "label": "MainActivity",
+      "file_type": "code",
+      "source_file": "android/app/src/main/java/com/hachi/note/MainActivity.java",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "note_mainactivity_mainactivity",
+      "community": 25,
+      "norm_label": "mainactivity"
+    },
+    {
+      "label": "BridgeActivity",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "bridgeactivity",
+      "community": 25,
+      "norm_label": "bridgeactivity"
+    },
+    {
+      "label": "ExampleUnitTest.java",
+      "file_type": "code",
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "myapp_exampleunittest",
+      "community": 4,
+      "norm_label": "exampleunittest.java"
+    },
+    {
+      "label": "ExampleUnitTest",
+      "file_type": "code",
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "myapp_exampleunittest_exampleunittest",
+      "community": 4,
+      "norm_label": "exampleunittest"
+    },
+    {
+      "label": ".addition_isCorrect()",
+      "file_type": "code",
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "myapp_exampleunittest_exampleunittest_addition_iscorrect",
+      "community": 4,
+      "norm_label": ".addition_iscorrect()"
+    },
+    {
+      "label": "build.gradle",
+      "file_type": "code",
+      "source_file": "android/build.gradle",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "android_build",
+      "community": 32,
+      "norm_label": "build.gradle"
+    },
+    {
+      "label": "settings.gradle",
+      "file_type": "code",
+      "source_file": "android/settings.gradle",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "android_settings",
+      "community": 33,
+      "norm_label": "settings.gradle"
+    },
+    {
+      "label": "variables.gradle",
+      "file_type": "code",
+      "source_file": "android/variables.gradle",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "android_variables",
+      "community": 34,
+      "norm_label": "variables.gradle"
+    },
+    {
+      "label": "capacitor.config.ts",
+      "file_type": "code",
+      "source_file": "capacitor.config.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "capacitor_config",
+      "community": 29,
+      "norm_label": "capacitor.config.ts"
+    },
+    {
+      "label": "config",
+      "file_type": "code",
+      "source_file": "capacitor.config.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "capacitor_config_config",
+      "community": 29,
+      "norm_label": "config"
+    },
+    {
       "label": "notes.spec.ts",
       "file_type": "code",
       "source_file": "e2e/notes.spec.ts",
       "source_location": "L1",
       "_origin": "ast",
       "id": "e2e_notes_spec",
-      "community": 24,
+      "community": 4,
       "norm_label": "notes.spec.ts"
     },
     {
@@ -93,7 +243,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package",
-      "community": 5,
+      "community": 24,
       "norm_label": "package.json"
     },
     {
@@ -103,7 +253,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "package_name",
-      "community": 5,
+      "community": 24,
       "norm_label": "name"
     },
     {
@@ -113,7 +263,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "package_version",
-      "community": 5,
+      "community": 24,
       "norm_label": "version"
     },
     {
@@ -123,7 +273,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "package_private",
-      "community": 5,
+      "community": 24,
       "norm_label": "private"
     },
     {
@@ -213,94 +363,124 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "package_dependencies",
-      "community": 5,
+      "community": 24,
       "norm_label": "dependencies"
+    },
+    {
+      "label": "@capacitor/android",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "package_dependencies_capacitor_android",
+      "community": 24,
+      "norm_label": "@capacitor/android"
+    },
+    {
+      "label": "@capacitor/cli",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "package_dependencies_capacitor_cli",
+      "community": 24,
+      "norm_label": "@capacitor/cli"
+    },
+    {
+      "label": "@capacitor/core",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "package_dependencies_capacitor_core",
+      "community": 24,
+      "norm_label": "@capacitor/core"
     },
     {
       "label": "better-sqlite3",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L15",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "package_dependencies_better_sqlite3",
-      "community": 5,
+      "community": 24,
       "norm_label": "better-sqlite3"
     },
     {
       "label": "js-yaml",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L16",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "package_dependencies_js_yaml",
-      "community": 5,
+      "community": 24,
       "norm_label": "js-yaml"
     },
     {
       "label": "lucide-react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "package_dependencies_lucide_react",
-      "community": 5,
+      "community": 24,
       "norm_label": "lucide-react"
     },
     {
       "label": "next",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "package_dependencies_next",
-      "community": 5,
+      "community": 24,
       "norm_label": "next"
     },
     {
       "label": "react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "package_dependencies_react",
-      "community": 5,
+      "community": 24,
       "norm_label": "react"
     },
     {
       "label": "react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "package_dependencies_react_dom",
-      "community": 5,
+      "community": 24,
       "norm_label": "react-dom"
     },
     {
       "label": "react-markdown",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "package_dependencies_react_markdown",
-      "community": 5,
+      "community": 24,
       "norm_label": "react-markdown"
     },
     {
       "label": "rehype-raw",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "package_dependencies_rehype_raw",
-      "community": 5,
+      "community": 24,
       "norm_label": "rehype-raw"
     },
     {
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "package_devdependencies",
       "community": 5,
@@ -310,7 +490,7 @@
       "label": "@playwright/test",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "package_devdependencies_playwright_test",
       "community": 5,
@@ -320,7 +500,7 @@
       "label": "@tailwindcss/postcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "package_devdependencies_tailwindcss_postcss",
       "community": 5,
@@ -330,7 +510,7 @@
       "label": "@testing-library/jest-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "package_devdependencies_testing_library_jest_dom",
       "community": 5,
@@ -340,7 +520,7 @@
       "label": "@testing-library/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "package_devdependencies_testing_library_react",
       "community": 5,
@@ -350,7 +530,7 @@
       "label": "@types/better-sqlite3",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "package_devdependencies_types_better_sqlite3",
       "community": 5,
@@ -360,7 +540,7 @@
       "label": "@types/js-yaml",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "package_devdependencies_types_js_yaml",
       "community": 5,
@@ -370,7 +550,7 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "package_devdependencies_types_node",
       "community": 5,
@@ -380,7 +560,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "package_devdependencies_types_react",
       "community": 5,
@@ -390,7 +570,7 @@
       "label": "@types/react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "package_devdependencies_types_react_dom",
       "community": 5,
@@ -400,7 +580,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "package_devdependencies_eslint",
       "community": 5,
@@ -410,7 +590,7 @@
       "label": "eslint-config-next",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "package_devdependencies_eslint_config_next",
       "community": 5,
@@ -420,7 +600,7 @@
       "label": "jsdom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "package_devdependencies_jsdom",
       "community": 5,
@@ -430,7 +610,7 @@
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "package_devdependencies_tailwindcss",
       "community": 5,
@@ -440,7 +620,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "package_devdependencies_typescript",
       "community": 5,
@@ -450,7 +630,7 @@
       "label": "vitest",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "package_devdependencies_vitest",
       "community": 5,
@@ -463,7 +643,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "playwright_config",
-      "community": 25,
+      "community": 4,
       "norm_label": "playwright.config.ts"
     },
     {
@@ -492,7 +672,7 @@
       "source_file": "public/manifest.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "public_manifest",
+      "id": "home_asus_pc_projects_crud_test_public_manifest_json",
       "community": 10,
       "norm_label": "manifest.json"
     },
@@ -585,6 +765,16 @@
       "id": "public_sw",
       "community": 26,
       "norm_label": "sw.js"
+    },
+    {
+      "label": "STATIC_ASSETS",
+      "file_type": "code",
+      "source_file": "public/sw.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "public_sw_static_assets",
+      "community": 26,
+      "norm_label": "static_assets"
     },
     {
       "label": "db.test.ts",
@@ -1417,20 +1607,10 @@
       "norm_label": "noteview.tsx"
     },
     {
-      "label": "renderWikilinkText()",
-      "file_type": "code",
-      "source_file": "src/components/NoteView.tsx",
-      "source_location": "L13",
-      "_origin": "ast",
-      "id": "components_noteview_renderwikilinktext",
-      "community": 6,
-      "norm_label": "renderwikilinktext()"
-    },
-    {
       "label": "WikilinkText()",
       "file_type": "code",
       "source_file": "src/components/NoteView.tsx",
-      "source_location": "L31",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "components_noteview_wikilinktext",
       "community": 6,
@@ -1440,7 +1620,7 @@
       "label": "SelectionToolbar()",
       "file_type": "code",
       "source_file": "src/components/NoteView.tsx",
-      "source_location": "L41",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "components_noteview_selectiontoolbar",
       "community": 6,
@@ -1450,7 +1630,7 @@
       "label": "NoteViewProps",
       "file_type": "code",
       "source_file": "src/components/NoteView.tsx",
-      "source_location": "L115",
+      "source_location": "L119",
       "_origin": "ast",
       "id": "components_noteview_noteviewprops",
       "community": 6,
@@ -1460,7 +1640,7 @@
       "label": "NoteView()",
       "file_type": "code",
       "source_file": "src/components/NoteView.tsx",
-      "source_location": "L121",
+      "source_location": "L126",
       "_origin": "ast",
       "id": "components_noteview_noteview",
       "community": 6,
@@ -1473,7 +1653,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_outline",
-      "community": 29,
+      "community": 6,
       "norm_label": "outline.tsx"
     },
     {
@@ -1483,7 +1663,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "components_outline_heading",
-      "community": 29,
+      "community": 6,
       "norm_label": "heading"
     },
     {
@@ -1493,7 +1673,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "components_outline_outlineprops",
-      "community": 29,
+      "community": 6,
       "norm_label": "outlineprops"
     },
     {
@@ -1503,7 +1683,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "components_outline_slugify",
-      "community": 29,
+      "community": 6,
       "norm_label": "slugify()"
     },
     {
@@ -1513,7 +1693,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "components_outline_parseheadings",
-      "community": 29,
+      "community": 6,
       "norm_label": "parseheadings()"
     },
     {
@@ -1523,7 +1703,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "components_outline_outline",
-      "community": 29,
+      "community": 6,
       "norm_label": "outline()"
     },
     {
@@ -2382,7 +2562,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "tsconfig",
+      "id": "home_asus_pc_projects_crud_test_tsconfig_json",
       "community": 3,
       "norm_label": "tsconfig.json"
     },
@@ -2392,7 +2572,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions",
+      "id": "crud_test_tsconfig_compileroptions",
       "community": 3,
       "norm_label": "compileroptions"
     },
@@ -2402,7 +2582,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_target",
+      "id": "crud_test_tsconfig_compileroptions_target",
       "community": 3,
       "norm_label": "target"
     },
@@ -2412,7 +2592,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_lib",
+      "id": "crud_test_tsconfig_compileroptions_lib",
       "community": 3,
       "norm_label": "lib"
     },
@@ -2422,7 +2602,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_allowjs",
+      "id": "crud_test_tsconfig_compileroptions_allowjs",
       "community": 3,
       "norm_label": "allowjs"
     },
@@ -2432,7 +2612,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_skiplibcheck",
+      "id": "crud_test_tsconfig_compileroptions_skiplibcheck",
       "community": 3,
       "norm_label": "skiplibcheck"
     },
@@ -2442,7 +2622,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_strict",
+      "id": "crud_test_tsconfig_compileroptions_strict",
       "community": 3,
       "norm_label": "strict"
     },
@@ -2452,7 +2632,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_noemit",
+      "id": "crud_test_tsconfig_compileroptions_noemit",
       "community": 3,
       "norm_label": "noemit"
     },
@@ -2462,7 +2642,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_esmoduleinterop",
+      "id": "crud_test_tsconfig_compileroptions_esmoduleinterop",
       "community": 3,
       "norm_label": "esmoduleinterop"
     },
@@ -2472,7 +2652,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_module",
+      "id": "crud_test_tsconfig_compileroptions_module",
       "community": 3,
       "norm_label": "module"
     },
@@ -2482,7 +2662,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_moduleresolution",
+      "id": "crud_test_tsconfig_compileroptions_moduleresolution",
       "community": 3,
       "norm_label": "moduleresolution"
     },
@@ -2492,7 +2672,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_resolvejsonmodule",
+      "id": "crud_test_tsconfig_compileroptions_resolvejsonmodule",
       "community": 3,
       "norm_label": "resolvejsonmodule"
     },
@@ -2502,7 +2682,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_isolatedmodules",
+      "id": "crud_test_tsconfig_compileroptions_isolatedmodules",
       "community": 3,
       "norm_label": "isolatedmodules"
     },
@@ -2512,7 +2692,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_jsx",
+      "id": "crud_test_tsconfig_compileroptions_jsx",
       "community": 3,
       "norm_label": "jsx"
     },
@@ -2522,7 +2702,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_incremental",
+      "id": "crud_test_tsconfig_compileroptions_incremental",
       "community": 3,
       "norm_label": "incremental"
     },
@@ -2532,7 +2712,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_plugins",
+      "id": "crud_test_tsconfig_compileroptions_plugins",
       "community": 3,
       "norm_label": "plugins"
     },
@@ -2542,7 +2722,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "tsconfig_compileroptions_paths",
+      "id": "crud_test_tsconfig_compileroptions_paths",
       "community": 3,
       "norm_label": "paths"
     },
@@ -2552,7 +2732,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L22",
       "_origin": "ast",
-      "id": "tsconfig_paths",
+      "id": "crud_test_tsconfig_paths",
       "community": 3,
       "norm_label": "@/*"
     },
@@ -2562,7 +2742,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "tsconfig_include",
+      "id": "crud_test_tsconfig_include",
       "community": 3,
       "norm_label": "include"
     },
@@ -2572,7 +2752,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L33",
       "_origin": "ast",
-      "id": "tsconfig_exclude",
+      "id": "crud_test_tsconfig_exclude",
       "community": 3,
       "norm_label": "exclude"
     },
@@ -2592,7 +2772,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "agents",
+      "id": "home_asus_pc_projects_crud_test_agents_md",
       "community": 30,
       "norm_label": "agents.md"
     },
@@ -2602,7 +2782,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "agents_this_is_not_the_next_js_you_know",
+      "id": "crud_test_agents_this_is_not_the_next_js_you_know",
       "community": 30,
       "norm_label": "this is not the next.js you know"
     },
@@ -2617,14 +2797,14 @@
       "norm_label": "ceo-plan.md"
     },
     {
-      "label": "CEO Plan: HACHI NOTE \u2014 Obsidian-Inspired Features",
+      "label": "CEO Plan: HACHI NOTE \u2014 Linked Notes Features",
       "file_type": "document",
       "source_file": "CEO-PLAN.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "id": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "community": 9,
-      "norm_label": "ceo plan: hachi note \u2014 obsidian-inspired features"
+      "norm_label": "ceo plan: hachi note \u2014 linked notes features"
     },
     {
       "label": "Vision",
@@ -2922,7 +3102,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude",
+      "id": "home_asus_pc_projects_crud_test_claude_md",
       "community": 31,
       "norm_label": "claude.md"
     },
@@ -2932,7 +3112,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "claude_skill_routing",
+      "id": "crud_test_claude_skill_routing",
       "community": 31,
       "norm_label": "skill routing"
     },
@@ -2977,14 +3157,14 @@
       "norm_label": "core notes"
     },
     {
-      "label": "Obsidian-Inspired Features",
+      "label": "Linked Notes",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "readme_obsidian_inspired_features",
+      "id": "readme_linked_notes",
       "community": 28,
-      "norm_label": "obsidian-inspired features"
+      "norm_label": "linked notes"
     },
     {
       "label": "Note Management",
@@ -3007,20 +3187,20 @@
       "norm_label": "dropdowns & menus"
     },
     {
-      "label": "Mobile",
+      "label": "Mobile (PWA)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L38",
       "_origin": "ast",
-      "id": "readme_mobile",
+      "id": "readme_mobile_pwa",
       "community": 28,
-      "norm_label": "mobile"
+      "norm_label": "mobile (pwa)"
     },
     {
       "label": "Tech Stack",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L46",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "readme_tech_stack",
       "community": 28,
@@ -3030,7 +3210,7 @@
       "label": "Getting Started",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L55",
+      "source_location": "L57",
       "_origin": "ast",
       "id": "readme_getting_started",
       "community": 28,
@@ -3040,7 +3220,7 @@
       "label": "Project Structure",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L64",
+      "source_location": "L66",
       "_origin": "ast",
       "id": "readme_project_structure",
       "community": 28,
@@ -3050,7 +3230,7 @@
       "label": "Wikilinks Syntax",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L101",
+      "source_location": "L103",
       "_origin": "ast",
       "id": "readme_wikilinks_syntax",
       "community": 28,
@@ -3060,7 +3240,7 @@
       "label": "YAML Frontmatter",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L108",
+      "source_location": "L110",
       "_origin": "ast",
       "id": "readme_yaml_frontmatter",
       "community": 28,
@@ -3070,11 +3250,21 @@
       "label": "Playwright Test Results",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L122",
+      "source_location": "L124",
       "_origin": "ast",
       "id": "readme_playwright_test_results",
       "community": 28,
       "norm_label": "playwright test results"
+    },
+    {
+      "label": "Future Development",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L152",
+      "_origin": "ast",
+      "id": "readme_future_development",
+      "community": 28,
+      "norm_label": "future development"
     },
     {
       "label": "Next.js Agent Rules",
@@ -3289,6 +3479,142 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "myapp_exampleinstrumentedtest",
+      "target": "myapp_exampleinstrumentedtest_exampleinstrumentedtest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "myapp_exampleinstrumentedtest",
+      "target": "package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "myapp_exampleinstrumentedtest_exampleinstrumentedtest",
+      "target": "myapp_exampleinstrumentedtest_exampleinstrumentedtest_useappcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "myapp_exampleinstrumentedtest_exampleinstrumentedtest_useappcontext",
+      "target": "package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/main/java/com/hachi/note/MainActivity.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "note_mainactivity",
+      "target": "bridgeactivity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/main/java/com/hachi/note/MainActivity.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "note_mainactivity",
+      "target": "note_mainactivity_mainactivity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/main/java/com/hachi/note/MainActivity.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "note_mainactivity_mainactivity",
+      "target": "bridgeactivity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "myapp_exampleunittest",
+      "target": "myapp_exampleunittest_exampleunittest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "myapp_exampleunittest",
+      "target": "package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "myapp_exampleunittest_exampleunittest",
+      "target": "myapp_exampleunittest_exampleunittest_addition_iscorrect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "myapp_exampleunittest_exampleunittest_addition_iscorrect",
+      "target": "package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "capacitor.config.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "capacitor_config",
+      "target": "capacitor_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "e2e/notes.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "e2e_notes_spec",
+      "target": "package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "eslint.config.mjs",
       "source_location": "L5",
       "weight": 1.0,
@@ -3437,6 +3763,17 @@
       "target": "package_scripts_test_watch"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "playwright.config.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "playwright_config",
+      "target": "package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
@@ -3450,11 +3787,41 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_capacitor_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
       "source_location": "L16",
       "weight": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_js_yaml",
+      "target": "package_dependencies_capacitor_cli",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_capacitor_core",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_js_yaml"
     },
     {
       "relation": "contains",
@@ -3512,9 +3879,9 @@
       "source_file": "package.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_rehype_raw",
-      "confidence_score": 1.0
+      "target": "package_dependencies_rehype_raw"
     },
     {
       "relation": "contains",
@@ -3612,9 +3979,9 @@
       "source_file": "package.json",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_js_yaml",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_types_js_yaml"
     },
     {
       "relation": "contains",
@@ -3682,9 +4049,9 @@
       "source_file": "public/manifest.json",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "public_manifest",
-      "target": "public_manifest_background_color"
+      "source": "home_asus_pc_projects_crud_test_public_manifest_json",
+      "target": "public_manifest_background_color",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3692,9 +4059,9 @@
       "source_file": "public/manifest.json",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "public_manifest",
-      "target": "public_manifest_description"
+      "source": "home_asus_pc_projects_crud_test_public_manifest_json",
+      "target": "public_manifest_description",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3702,9 +4069,9 @@
       "source_file": "public/manifest.json",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "public_manifest",
-      "target": "public_manifest_display"
+      "source": "home_asus_pc_projects_crud_test_public_manifest_json",
+      "target": "public_manifest_display",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3712,9 +4079,9 @@
       "source_file": "public/manifest.json",
       "source_location": "L9",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "public_manifest",
-      "target": "public_manifest_icons"
+      "source": "home_asus_pc_projects_crud_test_public_manifest_json",
+      "target": "public_manifest_icons",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3722,9 +4089,9 @@
       "source_file": "public/manifest.json",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "public_manifest",
-      "target": "public_manifest_name"
+      "source": "home_asus_pc_projects_crud_test_public_manifest_json",
+      "target": "public_manifest_name",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3732,9 +4099,9 @@
       "source_file": "public/manifest.json",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "public_manifest",
-      "target": "public_manifest_short_name"
+      "source": "home_asus_pc_projects_crud_test_public_manifest_json",
+      "target": "public_manifest_short_name",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3742,9 +4109,9 @@
       "source_file": "public/manifest.json",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "public_manifest",
-      "target": "public_manifest_start_url"
+      "source": "home_asus_pc_projects_crud_test_public_manifest_json",
+      "target": "public_manifest_start_url",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3752,9 +4119,19 @@
       "source_file": "public/manifest.json",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "public_manifest",
-      "target": "public_manifest_theme_color"
+      "source": "home_asus_pc_projects_crud_test_public_manifest_json",
+      "target": "public_manifest_theme_color",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/sw.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "public_sw",
+      "target": "public_sw_static_assets",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3782,9 +4159,9 @@
       "source_file": "src/app/api/daily-notes/route.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_notes_route",
-      "target": "daily_notes_route_post",
-      "confidence_score": 1.0
+      "target": "daily_notes_route_post"
     },
     {
       "relation": "imports_from",
@@ -3793,9 +4170,9 @@
       "source_file": "src/app/api/daily-notes/route.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_notes_route",
-      "target": "lib_db",
-      "confidence_score": 1.0
+      "target": "lib_db"
     },
     {
       "relation": "imports",
@@ -3804,9 +4181,9 @@
       "source_file": "src/app/api/daily-notes/route.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_notes_route",
-      "target": "lib_db_createfolder",
-      "confidence_score": 1.0
+      "target": "lib_db_createfolder"
     },
     {
       "relation": "imports",
@@ -3815,9 +4192,9 @@
       "source_file": "src/app/api/daily-notes/route.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_notes_route",
-      "target": "lib_db_createnote",
-      "confidence_score": 1.0
+      "target": "lib_db_createnote"
     },
     {
       "relation": "imports",
@@ -3826,9 +4203,9 @@
       "source_file": "src/app/api/daily-notes/route.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_notes_route",
-      "target": "lib_db_findnotebytitle",
-      "confidence_score": 1.0
+      "target": "lib_db_findnotebytitle"
     },
     {
       "relation": "imports",
@@ -3837,9 +4214,9 @@
       "source_file": "src/app/api/daily-notes/route.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_notes_route",
-      "target": "lib_db_getallfolders",
-      "confidence_score": 1.0
+      "target": "lib_db_getallfolders"
     },
     {
       "relation": "calls",
@@ -4041,9 +4418,9 @@
       "source_file": "src/app/api/notes/[id]/backlinks/route.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backlinks_route",
-      "target": "backlinks_route_get",
-      "confidence_score": 1.0
+      "target": "backlinks_route_get"
     },
     {
       "relation": "imports_from",
@@ -4052,9 +4429,9 @@
       "source_file": "src/app/api/notes/[id]/backlinks/route.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backlinks_route",
-      "target": "lib_db",
-      "confidence_score": 1.0
+      "target": "lib_db"
     },
     {
       "relation": "imports",
@@ -4063,9 +4440,9 @@
       "source_file": "src/app/api/notes/[id]/backlinks/route.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backlinks_route",
-      "target": "lib_db_getbacklinks",
-      "confidence_score": 1.0
+      "target": "lib_db_getbacklinks"
     },
     {
       "relation": "calls",
@@ -5017,9 +5394,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_page",
-      "target": "components_dailynotebutton",
-      "confidence_score": 1.0
+      "target": "components_dailynotebutton"
     },
     {
       "relation": "imports",
@@ -5028,9 +5405,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_page",
-      "target": "components_dailynotebutton_dailynotebutton",
-      "confidence_score": 1.0
+      "target": "components_dailynotebutton_dailynotebutton"
     },
     {
       "relation": "imports_from",
@@ -5061,9 +5438,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_page",
-      "target": "components_folderdropdown",
-      "confidence_score": 1.0
+      "target": "components_folderdropdown"
     },
     {
       "relation": "imports",
@@ -5072,9 +5449,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_page",
-      "target": "components_folderdropdown_folderdropdown",
-      "confidence_score": 1.0
+      "target": "components_folderdropdown_folderdropdown"
     },
     {
       "relation": "imports_from",
@@ -5116,9 +5493,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_page",
-      "target": "components_noteview",
-      "confidence_score": 1.0
+      "target": "components_noteview"
     },
     {
       "relation": "imports_from",
@@ -5247,9 +5624,9 @@
       "source_file": "src/components/Backlinks.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_backlinks",
-      "target": "components_backlinks_backlinknote",
-      "confidence_score": 1.0
+      "target": "components_backlinks_backlinknote"
     },
     {
       "relation": "contains",
@@ -5257,9 +5634,9 @@
       "source_file": "src/components/Backlinks.tsx",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_backlinks",
-      "target": "components_backlinks_backlinks",
-      "confidence_score": 1.0
+      "target": "components_backlinks_backlinks"
     },
     {
       "relation": "contains",
@@ -5267,9 +5644,9 @@
       "source_file": "src/components/Backlinks.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_backlinks",
-      "target": "components_backlinks_backlinksprops",
-      "confidence_score": 1.0
+      "target": "components_backlinks_backlinksprops"
     },
     {
       "relation": "imports_from",
@@ -5278,9 +5655,9 @@
       "source_file": "src/components/NoteView.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_noteview",
-      "target": "components_backlinks",
-      "confidence_score": 1.0
+      "target": "components_backlinks"
     },
     {
       "relation": "imports",
@@ -5289,9 +5666,9 @@
       "source_file": "src/components/NoteView.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_noteview",
-      "target": "components_backlinks_backlinks",
-      "confidence_score": 1.0
+      "target": "components_backlinks_backlinks"
     },
     {
       "relation": "contains",
@@ -5299,9 +5676,9 @@
       "source_file": "src/components/DailyNoteButton.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_dailynotebutton",
-      "target": "components_dailynotebutton_dailynotebutton",
-      "confidence_score": 1.0
+      "target": "components_dailynotebutton_dailynotebutton"
     },
     {
       "relation": "contains",
@@ -5309,9 +5686,9 @@
       "source_file": "src/components/DailyNoteButton.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_dailynotebutton",
-      "target": "components_dailynotebutton_dailynotebuttonprops",
-      "confidence_score": 1.0
+      "target": "components_dailynotebutton_dailynotebuttonprops"
     },
     {
       "relation": "contains",
@@ -5379,9 +5756,9 @@
       "source_file": "src/components/FolderDropdown.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_folderdropdown",
-      "target": "components_folderdropdown_folderdropdown",
-      "confidence_score": 1.0
+      "target": "components_folderdropdown_folderdropdown"
     },
     {
       "relation": "contains",
@@ -5389,9 +5766,9 @@
       "source_file": "src/components/FolderDropdown.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_folderdropdown",
-      "target": "components_folderdropdown_folderdropdownprops",
-      "confidence_score": 1.0
+      "target": "components_folderdropdown_folderdropdownprops"
     },
     {
       "relation": "contains",
@@ -5451,9 +5828,9 @@
       "source_file": "src/components/NoteCard.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_notecard",
-      "target": "components_notedropdown_notedropdown",
-      "confidence_score": 1.0
+      "target": "components_notedropdown_notedropdown"
     },
     {
       "relation": "imports_from",
@@ -5504,9 +5881,9 @@
       "source_file": "src/components/NoteView.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_noteview",
-      "target": "components_notedropdown",
-      "confidence_score": 1.0
+      "target": "components_notedropdown"
     },
     {
       "relation": "imports",
@@ -5515,9 +5892,9 @@
       "source_file": "src/components/NoteView.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_noteview",
-      "target": "components_notedropdown_notedropdown",
-      "confidence_score": 1.0
+      "target": "components_notedropdown_notedropdown"
     },
     {
       "relation": "contains",
@@ -5585,9 +5962,9 @@
       "source_file": "src/components/NoteView.tsx",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_noteview",
-      "target": "components_noteview_noteview",
-      "confidence_score": 1.0
+      "target": "components_noteview_noteview"
     },
     {
       "relation": "contains",
@@ -5595,19 +5972,9 @@
       "source_file": "src/components/NoteView.tsx",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_noteview",
-      "target": "components_noteview_noteviewprops",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/NoteView.tsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "components_noteview",
-      "target": "components_noteview_renderwikilinktext",
-      "confidence_score": 1.0
+      "target": "components_noteview_noteviewprops"
     },
     {
       "relation": "contains",
@@ -5615,9 +5982,9 @@
       "source_file": "src/components/NoteView.tsx",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_noteview",
-      "target": "components_noteview_selectiontoolbar",
-      "confidence_score": 1.0
+      "target": "components_noteview_selectiontoolbar"
     },
     {
       "relation": "contains",
@@ -5625,9 +5992,9 @@
       "source_file": "src/components/NoteView.tsx",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_noteview",
-      "target": "components_noteview_wikilinktext",
-      "confidence_score": 1.0
+      "target": "components_noteview_wikilinktext"
     },
     {
       "relation": "imports_from",
@@ -5636,9 +6003,9 @@
       "source_file": "src/components/NoteView.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_noteview",
-      "target": "components_outline",
-      "confidence_score": 1.0
+      "target": "components_outline"
     },
     {
       "relation": "imports_from",
@@ -5647,9 +6014,9 @@
       "source_file": "src/components/NoteView.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_noteview",
-      "target": "lib_frontmatter",
-      "confidence_score": 1.0
+      "target": "lib_frontmatter"
     },
     {
       "relation": "imports",
@@ -5658,20 +6025,9 @@
       "source_file": "src/components/NoteView.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_noteview",
-      "target": "lib_frontmatter_parsefrontmatter",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/NoteView.tsx",
-      "source_location": "L33",
-      "weight": 1.0,
-      "source": "components_noteview_wikilinktext",
-      "target": "components_noteview_renderwikilinktext",
-      "confidence_score": 1.0
+      "target": "lib_frontmatter_parsefrontmatter"
     },
     {
       "relation": "calls",
@@ -5690,9 +6046,9 @@
       "source_file": "src/components/Outline.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_outline",
-      "target": "components_outline_heading",
-      "confidence_score": 1.0
+      "target": "components_outline_heading"
     },
     {
       "relation": "contains",
@@ -5700,9 +6056,9 @@
       "source_file": "src/components/Outline.tsx",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_outline",
-      "target": "components_outline_outline",
-      "confidence_score": 1.0
+      "target": "components_outline_outline"
     },
     {
       "relation": "contains",
@@ -5710,9 +6066,9 @@
       "source_file": "src/components/Outline.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_outline",
-      "target": "components_outline_outlineprops",
-      "confidence_score": 1.0
+      "target": "components_outline_outlineprops"
     },
     {
       "relation": "contains",
@@ -5720,9 +6076,9 @@
       "source_file": "src/components/Outline.tsx",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_outline",
-      "target": "components_outline_parseheadings",
-      "confidence_score": 1.0
+      "target": "components_outline_parseheadings"
     },
     {
       "relation": "contains",
@@ -5730,9 +6086,9 @@
       "source_file": "src/components/Outline.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_outline",
-      "target": "components_outline_slugify",
-      "confidence_score": 1.0
+      "target": "components_outline_slugify"
     },
     {
       "relation": "calls",
@@ -5741,9 +6097,9 @@
       "source_file": "src/components/Outline.tsx",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_outline_parseheadings",
-      "target": "components_outline_slugify",
-      "confidence_score": 1.0
+      "target": "components_outline_slugify"
     },
     {
       "relation": "contains",
@@ -6206,9 +6562,9 @@
       "source_file": "src/lib/db.ts",
       "source_location": "L457",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_db",
-      "target": "lib_db_findnotebytitle",
-      "confidence_score": 1.0
+      "target": "lib_db_findnotebytitle"
     },
     {
       "relation": "contains",
@@ -6256,9 +6612,9 @@
       "source_file": "src/lib/db.ts",
       "source_location": "L461",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_db",
-      "target": "lib_db_getbacklinks",
-      "confidence_score": 1.0
+      "target": "lib_db_getbacklinks"
     },
     {
       "relation": "contains",
@@ -6356,9 +6712,9 @@
       "source_file": "src/lib/db.ts",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_db",
-      "target": "lib_db_hasmetadata",
-      "confidence_score": 1.0
+      "target": "lib_db_hasmetadata"
     },
     {
       "relation": "contains",
@@ -6581,9 +6937,9 @@
       "source_file": "src/lib/db.ts",
       "source_location": "L468",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_db_getbacklinks",
-      "target": "lib_db_enrichnotes",
-      "confidence_score": 1.0
+      "target": "lib_db_enrichnotes"
     },
     {
       "relation": "calls",
@@ -6636,9 +6992,9 @@
       "source_file": "src/lib/db.ts",
       "source_location": "L462",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_db_getbacklinks",
-      "target": "lib_db_getnote",
-      "confidence_score": 1.0
+      "target": "lib_db_getnote"
     },
     {
       "relation": "calls",
@@ -6723,9 +7079,9 @@
       "source_file": "src/lib/frontmatter.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_frontmatter",
-      "target": "lib_frontmatter_frontmatterresult",
-      "confidence_score": 1.0
+      "target": "lib_frontmatter_frontmatterresult"
     },
     {
       "relation": "contains",
@@ -6733,9 +7089,9 @@
       "source_file": "src/lib/frontmatter.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_frontmatter",
-      "target": "lib_frontmatter_parsefrontmatter",
-      "confidence_score": 1.0
+      "target": "lib_frontmatter_parsefrontmatter"
     },
     {
       "relation": "contains",
@@ -6753,9 +7109,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig",
-      "target": "tsconfig_compileroptions"
+      "source": "home_asus_pc_projects_crud_test_tsconfig_json",
+      "target": "crud_test_tsconfig_compileroptions",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6763,9 +7119,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L33",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig",
-      "target": "tsconfig_exclude"
+      "source": "home_asus_pc_projects_crud_test_tsconfig_json",
+      "target": "crud_test_tsconfig_exclude",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6773,9 +7129,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L25",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig",
-      "target": "tsconfig_include"
+      "source": "home_asus_pc_projects_crud_test_tsconfig_json",
+      "target": "crud_test_tsconfig_include",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6783,9 +7139,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_allowjs"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_allowjs",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6793,9 +7149,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L9",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_esmoduleinterop"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_esmoduleinterop",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6803,9 +7159,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L15",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_incremental"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_incremental",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6813,9 +7169,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L13",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_isolatedmodules"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_isolatedmodules",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6823,9 +7179,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L14",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_jsx"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_jsx",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6833,9 +7189,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_lib"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_lib",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6843,9 +7199,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L10",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_module"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_module",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6853,9 +7209,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L11",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_moduleresolution"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_moduleresolution",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6863,9 +7219,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_noemit"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_noemit",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6873,9 +7229,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L21",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_paths"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_paths",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6883,9 +7239,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_plugins"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_plugins",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6893,9 +7249,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_resolvejsonmodule"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_resolvejsonmodule",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6903,9 +7259,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_skiplibcheck"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_skiplibcheck",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6913,9 +7269,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_strict"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_strict",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6923,9 +7279,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_target"
+      "source": "crud_test_tsconfig_compileroptions",
+      "target": "crud_test_tsconfig_compileroptions_target",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6933,9 +7289,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L22",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tsconfig_compileroptions_paths",
-      "target": "tsconfig_paths"
+      "source": "crud_test_tsconfig_compileroptions_paths",
+      "target": "crud_test_tsconfig_paths",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6943,8 +7299,8 @@
       "source_file": "AGENTS.md",
       "source_location": "L2",
       "weight": 1.0,
-      "source": "agents",
-      "target": "agents_this_is_not_the_next_js_you_know",
+      "source": "home_asus_pc_projects_crud_test_agents_md",
+      "target": "crud_test_agents_this_is_not_the_next_js_you_know",
       "confidence_score": 1.0
     },
     {
@@ -6954,7 +7310,7 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "ceo_plan",
-      "target": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "target": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "confidence_score": 1.0
     },
     {
@@ -6963,7 +7319,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L23",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_accepted_scope",
       "confidence_score": 1.0
     },
@@ -6973,7 +7329,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L50",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_architecture_review",
       "confidence_score": 1.0
     },
@@ -6983,7 +7339,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L323",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_diagram_full_system_architecture",
       "confidence_score": 1.0
     },
@@ -6993,7 +7349,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L221",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_error_rescue_map",
       "confidence_score": 1.0
     },
@@ -7003,7 +7359,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L366",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_gstack_review_report",
       "confidence_score": 1.0
     },
@@ -7013,7 +7369,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L270",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_implementation_tasks",
       "confidence_score": 1.0
     },
@@ -7023,7 +7379,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L31",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_not_in_scope",
       "confidence_score": 1.0
     },
@@ -7033,7 +7389,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L260",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_performance_considerations",
       "confidence_score": 1.0
     },
@@ -7043,7 +7399,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L356",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_review_readiness",
       "confidence_score": 1.0
     },
@@ -7053,7 +7409,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L13",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_scope_decisions",
       "confidence_score": 1.0
     },
@@ -7063,7 +7419,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L236",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_security_threat_model",
       "confidence_score": 1.0
     },
@@ -7073,7 +7429,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L247",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_test_plan",
       "confidence_score": 1.0
     },
@@ -7083,7 +7439,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L7",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_vision",
       "confidence_score": 1.0
     },
@@ -7093,7 +7449,7 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L39",
       "weight": 1.0,
-      "source": "ceo_plan_ceo_plan_hachi_note_obsidian_inspired_features",
+      "source": "ceo_plan_ceo_plan_hachi_note_linked_notes_features",
       "target": "ceo_plan_what_already_exists",
       "confidence_score": 1.0
     },
@@ -7103,9 +7459,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_architecture_review",
-      "target": "ceo_plan_current_state",
-      "confidence_score": 1.0
+      "target": "ceo_plan_current_state"
     },
     {
       "relation": "contains",
@@ -7113,9 +7469,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_architecture_review",
-      "target": "ceo_plan_data_flow_backlinks",
-      "confidence_score": 1.0
+      "target": "ceo_plan_data_flow_backlinks"
     },
     {
       "relation": "contains",
@@ -7123,9 +7479,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L135",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_architecture_review",
-      "target": "ceo_plan_data_flow_daily_notes",
-      "confidence_score": 1.0
+      "target": "ceo_plan_data_flow_daily_notes"
     },
     {
       "relation": "contains",
@@ -7133,9 +7489,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L158",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_architecture_review",
-      "target": "ceo_plan_data_flow_outline",
-      "confidence_score": 1.0
+      "target": "ceo_plan_data_flow_outline"
     },
     {
       "relation": "contains",
@@ -7143,9 +7499,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_architecture_review",
-      "target": "ceo_plan_data_flow_wikilinks",
-      "confidence_score": 1.0
+      "target": "ceo_plan_data_flow_wikilinks"
     },
     {
       "relation": "contains",
@@ -7153,9 +7509,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_architecture_review",
-      "target": "ceo_plan_data_flow_yaml_frontmatter",
-      "confidence_score": 1.0
+      "target": "ceo_plan_data_flow_yaml_frontmatter"
     },
     {
       "relation": "contains",
@@ -7163,9 +7519,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L205",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_architecture_review",
-      "target": "ceo_plan_database_changes",
-      "confidence_score": 1.0
+      "target": "ceo_plan_database_changes"
     },
     {
       "relation": "contains",
@@ -7173,9 +7529,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_architecture_review",
-      "target": "ceo_plan_proposed_architecture",
-      "confidence_score": 1.0
+      "target": "ceo_plan_proposed_architecture"
     },
     {
       "relation": "contains",
@@ -7183,9 +7539,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L272",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_implementation_tasks",
-      "target": "ceo_plan_t1_p1_cc_30min_wikilinks_parser",
-      "confidence_score": 1.0
+      "target": "ceo_plan_t1_p1_cc_30min_wikilinks_parser"
     },
     {
       "relation": "contains",
@@ -7193,9 +7549,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L279",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_implementation_tasks",
-      "target": "ceo_plan_t2_p1_cc_20min_backlinks_api_component",
-      "confidence_score": 1.0
+      "target": "ceo_plan_t2_p1_cc_20min_backlinks_api_component"
     },
     {
       "relation": "contains",
@@ -7203,9 +7559,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L285",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_implementation_tasks",
-      "target": "ceo_plan_t3_p2_cc_15min_daily_notes",
-      "confidence_score": 1.0
+      "target": "ceo_plan_t3_p2_cc_15min_daily_notes"
     },
     {
       "relation": "contains",
@@ -7213,9 +7569,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L292",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_implementation_tasks",
-      "target": "ceo_plan_t4_p2_cc_15min_outline_component",
-      "confidence_score": 1.0
+      "target": "ceo_plan_t4_p2_cc_15min_outline_component"
     },
     {
       "relation": "contains",
@@ -7223,9 +7579,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L300",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_implementation_tasks",
-      "target": "ceo_plan_t5_p3_cc_10min_yaml_frontmatter",
-      "confidence_score": 1.0
+      "target": "ceo_plan_t5_p3_cc_10min_yaml_frontmatter"
     },
     {
       "relation": "contains",
@@ -7233,9 +7589,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L308",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_implementation_tasks",
-      "target": "ceo_plan_t6_p1_cc_20min_note_view_page",
-      "confidence_score": 1.0
+      "target": "ceo_plan_t6_p1_cc_20min_note_view_page"
     },
     {
       "relation": "contains",
@@ -7243,9 +7599,9 @@
       "source_file": "CEO-PLAN.md",
       "source_location": "L315",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ceo_plan_implementation_tasks",
-      "target": "ceo_plan_t7_p2_cc_10min_wikilink_autocomplete_in_noteform",
-      "confidence_score": 1.0
+      "target": "ceo_plan_t7_p2_cc_10min_wikilink_autocomplete_in_noteform"
     },
     {
       "relation": "contains",
@@ -7253,8 +7609,8 @@
       "source_file": "CLAUDE.md",
       "source_location": "L3",
       "weight": 1.0,
-      "source": "claude",
-      "target": "claude_skill_routing",
+      "source": "home_asus_pc_projects_crud_test_claude_md",
+      "target": "crud_test_claude_skill_routing",
       "confidence_score": 1.0
     },
     {
@@ -7263,9 +7619,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_hachi_note",
-      "confidence_score": 1.0
+      "target": "readme_hachi_note"
     },
     {
       "relation": "contains",
@@ -7273,8 +7629,18 @@
       "source_file": "README.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_hachi_note",
-      "target": "readme_features",
+      "target": "readme_features"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "readme_hachi_note",
+      "target": "readme_future_development",
       "confidence_score": 1.0
     },
     {
@@ -7283,9 +7649,9 @@
       "source_file": "README.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_hachi_note",
-      "target": "readme_getting_started",
-      "confidence_score": 1.0
+      "target": "readme_getting_started"
     },
     {
       "relation": "contains",
@@ -7293,9 +7659,9 @@
       "source_file": "README.md",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_hachi_note",
-      "target": "readme_playwright_test_results",
-      "confidence_score": 1.0
+      "target": "readme_playwright_test_results"
     },
     {
       "relation": "contains",
@@ -7303,9 +7669,9 @@
       "source_file": "README.md",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_hachi_note",
-      "target": "readme_project_structure",
-      "confidence_score": 1.0
+      "target": "readme_project_structure"
     },
     {
       "relation": "contains",
@@ -7313,9 +7679,9 @@
       "source_file": "README.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_hachi_note",
-      "target": "readme_tech_stack",
-      "confidence_score": 1.0
+      "target": "readme_tech_stack"
     },
     {
       "relation": "contains",
@@ -7323,9 +7689,9 @@
       "source_file": "README.md",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_hachi_note",
-      "target": "readme_wikilinks_syntax",
-      "confidence_score": 1.0
+      "target": "readme_wikilinks_syntax"
     },
     {
       "relation": "contains",
@@ -7333,9 +7699,9 @@
       "source_file": "README.md",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_hachi_note",
-      "target": "readme_yaml_frontmatter",
-      "confidence_score": 1.0
+      "target": "readme_yaml_frontmatter"
     },
     {
       "relation": "contains",
@@ -7343,9 +7709,9 @@
       "source_file": "README.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_features",
-      "target": "readme_core_notes",
-      "confidence_score": 1.0
+      "target": "readme_core_notes"
     },
     {
       "relation": "contains",
@@ -7353,8 +7719,18 @@
       "source_file": "README.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_features",
-      "target": "readme_dropdowns_menus",
+      "target": "readme_dropdowns_menus"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "readme_features",
+      "target": "readme_linked_notes",
       "confidence_score": 1.0
     },
     {
@@ -7364,7 +7740,7 @@
       "source_location": "L38",
       "weight": 1.0,
       "source": "readme_features",
-      "target": "readme_mobile",
+      "target": "readme_mobile_pwa",
       "confidence_score": 1.0
     },
     {
@@ -7373,19 +7749,9 @@
       "source_file": "README.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_features",
-      "target": "readme_note_management",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L17",
-      "weight": 1.0,
-      "source": "readme_features",
-      "target": "readme_obsidian_inspired_features",
-      "confidence_score": 1.0
+      "target": "readme_note_management"
     },
     {
       "relation": "implements",
@@ -7540,5 +7906,5 @@
       "source_file": "AGENTS.md"
     }
   ],
-  "built_at_commit": "0f0a1d7590c13d07db3c54b9d11a7366eb93d010"
+  "built_at_commit": "eb5b762ce360215fe2b55d157f4a82eebba33002"
 }

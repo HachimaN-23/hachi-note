@@ -1,16 +1,16 @@
-# Graph Report - crud-test  (2026-06-27)
+# Graph Report - hachi-note  (2026-06-27)
 
 ## Corpus Check
-- 50 files · ~26,647 words
+- 58 files · ~26,926 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 320 nodes · 408 edges · 32 communities (21 shown, 11 thin omitted)
+- 339 nodes · 425 edges · 36 communities (22 shown, 14 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0f0a1d75`
+- Built from commit: `eb5b762c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -39,6 +39,9 @@
 - [[_COMMUNITY_File Icon|File Icon]]
 - [[_COMMUNITY_Globe Icon|Globe Icon]]
 - [[_COMMUNITY_Window Icon|Window Icon]]
+- [[_COMMUNITY_E2E Tests|E2E Tests]]
+- [[_COMMUNITY_Playwright Config|Playwright Config]]
+- [[_COMMUNITY_Service Worker|Service Worker]]
 - [[_COMMUNITY_Community 28|Community 28]]
 - [[_COMMUNITY_Community 29|Community 29]]
 - [[_COMMUNITY_Community 30|Community 30]]
@@ -46,15 +49,15 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 16 edges
-2. `CEO Plan: HACHI NOTE — Obsidian-Inspired Features` - 15 edges
+2. `CEO Plan: HACHI NOTE — Linked Notes Features` - 15 edges
 3. `getNote()` - 13 edges
 4. `enrichNotes()` - 9 edges
 5. `Architecture Review` - 9 edges
-6. `scripts` - 8 edges
-7. `Implementation Tasks` - 8 edges
-8. `HACHI NOTE` - 8 edges
-9. `createNote()` - 7 edges
-10. `Features` - 6 edges
+6. `HACHI NOTE` - 9 edges
+7. `scripts` - 8 edges
+8. `Implementation Tasks` - 8 edges
+9. `test` - 7 edges
+10. `createNote()` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Next.js Logo` --references--> `Next.js Framework`  [EXTRACTED]
@@ -75,7 +78,7 @@
 - **Next.js + Vercel Deployment Ecosystem** — nextjs_framework, vercel_platform, nextjs_agent_rules, crud_test_readme_md, crud_test_public_next_svg, crud_test_public_vercel_svg [INFERRED 0.85]
 - **Project Configuration & Agent Documents** — crud_test_agents_md, crud_test_claude_md, nextjs_agent_rules, skill_routing_rules [EXTRACTED 1.00]
 
-## Communities (32 total, 11 thin omitted)
+## Communities (36 total, 14 thin omitted)
 
 ### Community 0 - "API Routes & Database"
 Cohesion: 0.07
@@ -94,16 +97,16 @@ Cohesion: 0.10
 Nodes (19): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+11 more)
 
 ### Community 4 - "Package Dependencies"
-Cohesion: 0.25
-Nodes (8): scripts, build, dev, lint, start, test, test:e2e, test:watch
+Cohesion: 0.14
+Nodes (10): ExampleInstrumentedTest, ExampleUnitTest, scripts, build, dev, lint, start, test (+2 more)
 
 ### Community 5 - "Dev Dependencies"
-Cohesion: 0.07
-Nodes (28): dependencies, better-sqlite3, js-yaml, lucide-react, next, react, react-dom, react-markdown (+20 more)
+Cohesion: 0.12
+Nodes (16): devDependencies, eslint, eslint-config-next, jsdom, @playwright/test, tailwindcss, @tailwindcss/postcss, @testing-library/jest-dom (+8 more)
 
 ### Community 6 - "Note Card Component"
-Cohesion: 0.10
-Nodes (16): BacklinkNote, Backlinks(), BacklinksProps, ChecklistItem, NOTE_COLORS, NoteCardProps, NoteDropdown(), NoteDropdownProps (+8 more)
+Cohesion: 0.08
+Nodes (18): BacklinkNote, Backlinks(), BacklinksProps, ChecklistItem, NOTE_COLORS, NoteCardProps, NoteDropdown(), NoteDropdownProps (+10 more)
 
 ### Community 7 - "Checklist API"
 Cohesion: 0.29
@@ -115,7 +118,7 @@ Nodes (9): Next.js Agent Rules, Skill Routing Configuration, Next.js Logo, Verce
 
 ### Community 9 - "DB Enrichment Functions"
 Cohesion: 0.06
-Nodes (30): Accepted Scope, Architecture Review, CEO Plan: HACHI NOTE — Obsidian-Inspired Features, Current State, Data Flow — Backlinks, Data Flow — Daily Notes, Data Flow — Outline, Data Flow — Wikilinks (+22 more)
+Nodes (30): Accepted Scope, Architecture Review, CEO Plan: HACHI NOTE — Linked Notes Features, Current State, Data Flow — Backlinks, Data Flow — Daily Notes, Data Flow — Outline, Data Flow — Wikilinks (+22 more)
 
 ### Community 10 - "PWA Manifest"
 Cohesion: 0.22
@@ -137,24 +140,28 @@ Nodes (4): DELETE(), POST(), addNoteImage(), deleteNoteImage()
 Cohesion: 0.60
 Nodes (4): deleteFolder(), updateFolder(), DELETE(), PUT()
 
-### Community 28 - "Community 28"
-Cohesion: 0.14
-Nodes (13): Core Notes, Dropdowns & Menus, Features, Getting Started, HACHI NOTE, Mobile, Note Management, Obsidian-Inspired Features (+5 more)
+### Community 24 - "E2E Tests"
+Cohesion: 0.12
+Nodes (15): dependencies, better-sqlite3, @capacitor/android, @capacitor/cli, @capacitor/core, js-yaml, lucide-react, next (+7 more)
 
-### Community 29 - "Community 29"
-Cohesion: 0.40
-Nodes (4): Heading, OutlineProps, parseHeadings(), slugify()
+### Community 28 - "Community 28"
+Cohesion: 0.13
+Nodes (14): Core Notes, Dropdowns & Menus, Features, Future Development, Getting Started, HACHI NOTE, Linked Notes, Mobile (PWA) (+6 more)
 
 ## Knowledge Gaps
-- **156 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+151 more)
+- **161 isolated node(s):** `config`, `eslintConfig`, `nextConfig`, `name`, `version` (+156 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **What connects `eslintConfig`, `nextConfig`, `name` to the rest of the system?**
-  _156 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `devDependencies` connect `Dev Dependencies` to `E2E Tests`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **Why does `scripts` connect `Package Dependencies` to `E2E Tests`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **What connects `config`, `eslintConfig`, `nextConfig` to the rest of the system?**
+  _161 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `API Routes & Database` be split into smaller, more focused modules?**
   _Cohesion score 0.07088989441930618 - nodes in this community are weakly interconnected._
 - **Should `App Layout & Theme` be split into smaller, more focused modules?**
@@ -163,7 +170,3 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.07816091954022988 - nodes in this community are weakly interconnected._
 - **Should `TypeScript Config` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
-- **Should `Dev Dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected._
-- **Should `Note Card Component` be split into smaller, more focused modules?**
-  _Cohesion score 0.10153846153846154 - nodes in this community are weakly interconnected._

@@ -15,9 +15,9 @@
     "semantic_hash": "1cf426a4742119cb70565236ed18995a"
   },
   "package.json": {
-    "mtime": 1782458860.2831373,
-    "ast_hash": "06cde05a6b8f332ae3d96dd773046303",
-    "semantic_hash": "06cde05a6b8f332ae3d96dd773046303"
+    "mtime": 1782535972.386842,
+    "ast_hash": "a2d5d04a9542cbf919fdba1623ae85ed",
+    "semantic_hash": ""
   },
   "playwright.config.ts": {
     "mtime": 1782458662.2511966,
@@ -110,9 +110,9 @@
     "semantic_hash": "0a3ba06027ef5a2937ce496857bd33bd"
   },
   "src/app/page.tsx": {
-    "mtime": 1782477146.3189085,
-    "ast_hash": "b6e2b80c5dc1d9f35d0ba34d5dbf27b5",
-    "semantic_hash": "b6e2b80c5dc1d9f35d0ba34d5dbf27b5"
+    "mtime": 1782541003.3149173,
+    "ast_hash": "242abcc7a2446d8892d6b9cbc1337297",
+    "semantic_hash": ""
   },
   "src/components/ExportMenu.tsx": {
     "mtime": 1782471876.2858753,
@@ -120,22 +120,22 @@
     "semantic_hash": "0d1683d32846c2fde0a993b9631b2023"
   },
   "src/components/NoteCard.tsx": {
-    "mtime": 1782478967.6635919,
-    "ast_hash": "c48b68c70f1b4864bf4354bd8c464736",
-    "semantic_hash": "c48b68c70f1b4864bf4354bd8c464736"
+    "mtime": 1782542337.1188788,
+    "ast_hash": "b31151ac48bb89d00aef69ed2287a893",
+    "semantic_hash": ""
   },
   "src/components/NoteDropdown.tsx": {
-    "mtime": 1782476789.1442697,
-    "ast_hash": "505da348488d1b8d91277be7e90a0e85",
-    "semantic_hash": "505da348488d1b8d91277be7e90a0e85"
+    "mtime": 1782538168.7030184,
+    "ast_hash": "a17c04afa76e3a56bc5066b3660d2030",
+    "semantic_hash": ""
   },
   "src/components/NoteForm.tsx": {
-    "mtime": 1782476901.3185859,
-    "ast_hash": "3193c3116d3ae516a3ae051600179206",
-    "semantic_hash": "3193c3116d3ae516a3ae051600179206"
+    "mtime": 1782533660.127161,
+    "ast_hash": "ae0666012a402bb53d3d5ef16f70a546",
+    "semantic_hash": ""
   },
   "src/components/QuickNote.tsx": {
-    "mtime": 1782477132.7271125,
+    "mtime": 1782539702.726963,
     "ast_hash": "6f9ea4cf481e4aabd27df262faec389e",
     "semantic_hash": "6f9ea4cf481e4aabd27df262faec389e"
   },
@@ -145,9 +145,9 @@
     "semantic_hash": "b29843475efb673e3f4da6520df24c4f"
   },
   "src/components/TagFilter.tsx": {
-    "mtime": 1782469406.1352334,
-    "ast_hash": "7a23899d699ec7708220cb0618d3acf8",
-    "semantic_hash": "7a23899d699ec7708220cb0618d3acf8"
+    "mtime": 1782538185.0510185,
+    "ast_hash": "4076ce4249a0d1430b2bd7a956f9b6a2",
+    "semantic_hash": ""
   },
   "src/components/ThemeProvider.tsx": {
     "mtime": 1782470948.0691793,
@@ -165,9 +165,9 @@
     "semantic_hash": "e192e5d22918aaeeb0b45946e9a34f8d"
   },
   "src/lib/db.ts": {
-    "mtime": 1782474778.3368044,
-    "ast_hash": "918ea82702524089ce680f9e68518ee8",
-    "semantic_hash": "918ea82702524089ce680f9e68518ee8"
+    "mtime": 1782534632.1391263,
+    "ast_hash": "74e1f828e75807213c6564689183efeb",
+    "semantic_hash": ""
   },
   "src/lib/utils.ts": {
     "mtime": 1782466582.600767,
@@ -200,9 +200,9 @@
     "semantic_hash": "268730d585c27d5c8ad728fe69cebfb2"
   },
   "README.md": {
-    "mtime": 1782453111.422766,
-    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
-    "semantic_hash": "f15aaa42d5d299d091b1171097ea56ad"
+    "mtime": 1782541408.0589058,
+    "ast_hash": "019a5a8effe6a11c7d6c3b0dfa21a76f",
+    "semantic_hash": ""
   },
   "playwright-report/index.html": {
     "mtime": 1782469406.1352334,
@@ -243,5 +243,50 @@
     "mtime": 1782453111.4257705,
     "ast_hash": "a2760511c65806022ad20adf74370ff3",
     "semantic_hash": "a2760511c65806022ad20adf74370ff3"
+  },
+  "src/app/api/daily-notes/route.ts": {
+    "mtime": 1782533636.6071615,
+    "ast_hash": "1b0f76668e8204ea06663f7360731b32",
+    "semantic_hash": ""
+  },
+  "src/app/api/notes/[id]/backlinks/route.ts": {
+    "mtime": 1782533281.7871704,
+    "ast_hash": "b2b9e1a2add44f276031eca892cd1791",
+    "semantic_hash": ""
+  },
+  "src/components/Backlinks.tsx": {
+    "mtime": 1782534626.7231264,
+    "ast_hash": "b887ae2d59e2ed8c1ec50c219ac9c653",
+    "semantic_hash": ""
+  },
+  "src/components/DailyNoteButton.tsx": {
+    "mtime": 1782533319.4791737,
+    "ast_hash": "c0ee5c3d413d93d0f8dbeda6f5e7f1a1",
+    "semantic_hash": ""
+  },
+  "src/components/FolderDropdown.tsx": {
+    "mtime": 1782539575.5669613,
+    "ast_hash": "2ccfe8a99c8d77ba47cf0cf551d52903",
+    "semantic_hash": ""
+  },
+  "src/components/NoteView.tsx": {
+    "mtime": 1782542337.6788788,
+    "ast_hash": "07489c2451a18e1bf145c76a4f5612f5",
+    "semantic_hash": ""
+  },
+  "src/components/Outline.tsx": {
+    "mtime": 1782533784.4791563,
+    "ast_hash": "c1eba85741099612dfaf3eb400fb3802",
+    "semantic_hash": ""
+  },
+  "src/lib/frontmatter.ts": {
+    "mtime": 1782534612.463127,
+    "ast_hash": "d2064eb1a495319cecdbc4404db064f0",
+    "semantic_hash": ""
+  },
+  "CEO-PLAN.md": {
+    "mtime": 1782532585.483193,
+    "ast_hash": "f8e0cbf90c7ddd774c9f9d375863c49d",
+    "semantic_hash": ""
   }
 }

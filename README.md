@@ -148,3 +148,14 @@ Frontmatter tags are merged with the tag system. Custom fields are stored as JSO
 | Mobile: dropdown works | ✅ |
 | Mobile: NoteView container | ✅ |
 | Mobile: no text overflow | ✅ |
+
+## Future Development
+
+- [ ] Graph view (note relationship visualization)
+- [ ] Callouts `> [!info]` syntax support
+- [ ] Templates for common note formats
+- [ ] Canvas/whiteboard for visual thinking
+- [ ] Plugin system for extensibility
+- [ ] Real-time collaboration
+- [ ] End-to-end encryption
+- [ ] Mobile app via Capacitor (APK/IPA)
