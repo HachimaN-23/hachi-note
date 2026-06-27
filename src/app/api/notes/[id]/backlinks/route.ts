@@ -13,7 +13,7 @@ export async function GET(
       return NextResponse.json({ error: 'Invalid note ID' }, { status: 400 });
     }
 
-    const backlinks = getBacklinks(noteId);
+    const backlinks = await getBacklinks(noteId);
     return NextResponse.json(backlinks);
   } catch {
     return NextResponse.json({ error: 'Failed to fetch backlinks' }, { status: 500 });

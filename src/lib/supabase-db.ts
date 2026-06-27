@@ -99,7 +99,7 @@ async function enrichNotes(notes: Note[]): Promise<Note[]> {
 }
 
 export async function getAllNotes(folderId?: number | null): Promise<Note[]> {
-  let query = supabase.from('notes').select('*');
+  let query = supabase.from('notes').select('*, note_tags(tags(name)), checklist_items(*)');
   if (folderId !== undefined) {
     if (folderId === null) {
       query = query.is('folder_id', null);
@@ -108,7 +108,12 @@ export async function getAllNotes(folderId?: number | null): Promise<Note[]> {
     }
   }
   const { data } = await query.order('pinned', { ascending: false }).order('updated_at', { ascending: false });
-  return enrichNotes(data || []);
+  return (data || []).map((row: any) => {
+    const tags = (row.note_tags || []).map((nt: any) => nt.tags?.name).filter(Boolean);
+    const checklist_items = (row.checklist_items || []).sort((a: any, b: any) => a.position - b.position);
+    const { note_tags, ...rest } = row;
+    return { ...rest, tags, checklist_items } as Note;
+  });
 }
 
 export async function searchNotes(query: string): Promise<Note[]> {
@@ -116,11 +121,16 @@ export async function searchNotes(query: string): Promise<Note[]> {
   if (!sanitized) return [];
   const { data } = await supabase
     .from('notes')
-    .select('*')
+    .select('*, note_tags(tags(name)), checklist_items(*)')
     .or(`title.ilike.%${sanitized}%,content.ilike.%${sanitized}%`)
     .order('pinned', { ascending: false })
     .order('updated_at', { ascending: false });
-  return enrichNotes(data || []);
+  return (data || []).map((row: any) => {
+    const tags = (row.note_tags || []).map((nt: any) => nt.tags?.name).filter(Boolean);
+    const checklist_items = (row.checklist_items || []).sort((a: any, b: any) => a.position - b.position);
+    const { note_tags, ...rest } = row;
+    return { ...rest, tags, checklist_items } as Note;
+  });
 }
 
 export async function getNotesByTag(tagName: string): Promise<Note[]> {
@@ -133,17 +143,32 @@ export async function getNotesByTag(tagName: string): Promise<Note[]> {
   const ids = noteTags.map(nt => nt.note_id);
   const { data } = await supabase
     .from('notes')
-    .select('*')
+    .select('*, note_tags(tags(name)), checklist_items(*)')
     .in('id', ids)
     .order('pinned', { ascending: false })
     .order('updated_at', { ascending: false });
-  return enrichNotes(data || []);
+  return (data || []).map((row: any) => {
+    const tags = (row.note_tags || []).map((nt: any) => nt.tags?.name).filter(Boolean);
+    const checklist_items = (row.checklist_items || []).sort((a: any, b: any) => a.position - b.position);
+    const { note_tags, ...rest } = row;
+    return { ...rest, tags, checklist_items } as Note;
+  });
 }
 
 export async function getNote(id: number): Promise<Note | undefined> {
-  const { data } = await supabase.from('notes').select('*').eq('id', id).single();
+  const { data } = await supabase
+    .from('notes')
+    .select('*, note_tags(tags(name)), checklist_items(*)')
+    .eq('id', id)
+    .single();
   if (!data) return undefined;
-  return (await enrichNotes([data]))[0];
+  const tags = (data.note_tags || [])
+    .map((nt: any) => nt.tags?.name)
+    .filter(Boolean);
+  const checklist_items = (data.checklist_items || [])
+    .sort((a: any, b: any) => a.position - b.position);
+  const { note_tags, ...rest } = data;
+  return { ...rest, tags, checklist_items } as Note;
 }
 
 export async function createNote(title: string, content: string, tags: string[] = [], color?: string | null, folderId?: number | null): Promise<Note> {
@@ -309,8 +334,13 @@ export async function getBacklinks(noteId: number): Promise<Note[]> {
   if (!note) return [];
   const { data } = await supabase
     .from('notes')
-    .select('*')
+    .select('*, note_tags(tags(name)), checklist_items(*)')
     .neq('id', noteId)
     .like('content', `%[[${note.title}]]%`);
-  return enrichNotes(data || []);
+  return (data || []).map((row: any) => {
+    const tags = (row.note_tags || []).map((nt: any) => nt.tags?.name).filter(Boolean);
+    const checklist_items = (row.checklist_items || []).sort((a: any, b: any) => a.position - b.position);
+    const { note_tags, ...rest } = row;
+    return { ...rest, tags, checklist_items } as Note;
+  });
 }
